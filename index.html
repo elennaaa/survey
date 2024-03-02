@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Burn Bright, Not Out</title>
+    <!-- <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gluten:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form action="/" method="post">
+      <section id="personal-info">
+        <div class="header">
+          <h1 class="h1-index">1</h1>
+          <h1 class="h1-title">Your Personal Information</h1>
+          <p>First, we would like to collect some of your personal data but it's nothing too personal. As of your name, if you are not confortable sharing it with us, feel free to choose a nick name instead. And for the rest, we would be so grateful if you answer as much thoughtful and honest as possible so that we could identify the causes, signs,... and give you guys insightful information later on. </p>
+        </div>
+        <hr class="header-body">
+        <div class="body">
+          <label class="question" for="name">Your name (or nick name)</label> <br>
+          <input spellcheck="false" class="input-box" type="text" name="name" required  requiredvalue=""> <br>
+
+          <label class="question" for="email">Your email address</label> <br>
+          <input spellcheck="false" class="input-box" type="email" name="email" required value=""> <br>
+
+          <label class="question" for="gender">Gender</label> <br>
+          <div class="check-box">
+            <input class="check-item" type="radio" id="female" name="gender" required value="Female">
+            <label for="female">Female</label>
+            <input class="check-item" type="radio" id="male" name="gender" required value="Male">
+            <label for="male">Male</label>
+            <input class="check-item" type="radio" id="noSpecific" name="gender" required value="noSpecific">
+            <label for="noSpecific">Don't want to mention</label>
+          </div>
+
+          <label class="question" for="year">Are you an FTU first-year student?</label>
+          <div class="check-box">
+            <input class="check-item" type="radio" id="firstYear" name="year" required value="Yes">
+            <label for="firstYear">Yes</label>
+            <input class="check-item" type="radio" id="notFirstYear" name="year" required value="No">
+            <label for="notFirstYear">No</label>
+          </div>
+          <a href="#signs" class="next-btn vertical-center">
+            <span class="next-btn-text arrow">Next</span>
+            <i class="fa-solid fa-arrow-right-long arrow"></i>
+          </a>
+        </div>
+      </section>
+
+<div class="space"></div>
+
+      <section id="signs">
+        <div class="header">
+          <h1 class="h1-index">2</h1>
+          <h1 class="h1-title">Signs That You Are Suffuring From Burnout</h1>
+          <p>Now that you have signed up your personal information, we will be looking for any signs that you are suffuring from burnout. Please carefully read these statements and rate how frequently you have experienced them. Once we have a better look at at this we can move on to identify the stage of burnout that you are on.</p>
+        </div>
+        <hr class="header-body">
+        <div class="body">
+          <!-- QUESTION 1 -->
+          <div class="question-1">
+            <label class="query" for="exhaustion">You’re tired all the time, no matter how much sleep you get.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="exhaustion" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="exhaustion" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="exhaustion" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="exhaustion" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="exhaustion" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="exhaustion" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="exhaustion" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 2 -->
+          <div class="q-query question-2">
+            <label class="query" for="motivation">You find yourself lacking the motivation to see friends, attend class, or participate in social activities.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="motivation" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="motivation" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="motivation" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="motivation" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="motivation" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="motivation" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="motivation" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 3 -->
+          <div class="q-query question-3">
+            <label class="query" for="creativity">You have trouble completing tasks that didn’t give you trouble previously, especially those that require original ideas or imagination.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="creativity" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="creativity" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="creativity" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="creativity" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="creativity" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="creativity" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="creativity" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 4 -->
+          <div class="q-query question-4">
+            <label class="query" for="irritability">You feel disappointed in yourself or critical of your academic performance, resulting in annoyance or a quickness to anger.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="irritability" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="irritability" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="irritability" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="irritability" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="irritability" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="irritability" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="irritability" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 5 -->
+          <div class="q-query question-5">
+            <label class="query" for="focus">You have foggy brain and inablity to focus.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="focus" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="focus" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="focus" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="focus" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="focus" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="focus" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="focus" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 6 -->
+          <div class="q-query question-6">
+            <label class="query" for="interest">You lose interest in things that previously brought you joy and fulfillment.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="interest" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="interest" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="interest" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="interest" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="interest" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="interest" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="interest" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 7 -->
+          <div class="q-query question-7">
+            <label class="query" for="illness">You find yourself getting ill more frequently than usual.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="illness" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="illness" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="illness" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="illness" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="illness" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="illness" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="illness" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 8 -->
+          <div class="q-query question-8">
+            <label class="query" for="mental">You experience anxiety or depression.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="mental" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="mental" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="mental" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="mental" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="mental" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="mental" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="mental" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <a href="#stages" class="next-btn vertical-center">
+            <span class="next-btn-text arrow">Next</span>
+            <i class="fa-solid fa-arrow-right-long arrow"></i>
+          </a>
+        </div>
+      </section>
+
+<div class="space"></div>
+
+      <section id="stages">
+        <div class="header">
+          <h1 class="h1-index">3</h1>
+          <h1 class="h1-title">WHich Stage Are You On?</h1>
+          <p>After the little "warm-up" and the sneak peak, you must already know that this questionnaire is designed to find out the stage of burnout that you might be on. It would be all easy-peasy as you have just finished a similar one. So just carefully read, thoughtfully answer and enjoy the process <3 </p>
+        </div>
+        <hr class="header-body">
+        <div class="body">
+          <!-- QUESTION 1 -->
+          <div class="question-1">
+            <label class="query" for="sTG1">You feel like you constantly have to prove yourself.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG1" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG1" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG1" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG1" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG1" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG1" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG1" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 2 -->
+          <div class="q-query question-2">
+            <label class="query" for="sTG2">“I must do more.”</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG2" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG2" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG2" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG2" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG2" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG2" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG2" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 3 -->
+          <div class="q-query question-3">
+            <label class="query" for="sTG3">You neglect needs.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG3" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG3" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG3" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG3" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG3" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG3" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG3" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 4 -->
+          <div class="q-query question-4">
+            <label class="query" for="sTG4">You avoid the admittance of exhaustion.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG4" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG4" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG4" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG4" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG4" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG4" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG4" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 5 -->
+          <div class="q-query question-5">
+            <label class="query" for="sTG5">You think that your friends and family are no longer as important as your work.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG5" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG5" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG5" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG5" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG5" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG5" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG5" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 6 -->
+          <div class="q-query question-6">
+            <label class="query" for="sTG6">You deny problems.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG6" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG6" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG6" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG6" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG6" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG6" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG6" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 7 -->
+          <div class="q-query question-7">
+            <label class="query" for="sTG7">You avoid or dread social interaction.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG7" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG7" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG7" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG7" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG7" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG7" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG7" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 8 -->
+          <div class="q-query question-8">
+            <label class="query" for="sTG8">“I’m fine, stop worrying.”</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG8" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG8" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG8" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG8" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG8" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG8" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG8" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 9 -->
+          <div class="q-query question-9">
+            <label class="query" for="sTG9">“I just need to make it through today.”</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG9" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG9" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG9" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG9" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG9" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG9" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG9" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 10 -->
+          <div class="q-query question-10">
+            <label class="query" for="sTG10">You feel empty inside.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG10" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG10" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG10" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG10" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG10" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG10" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG10" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 11 -->
+          <div class="q-query question-11">
+            <label class="query" for="sTG11">“Nothing really matters.”</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG11" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG11" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG11" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG11" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG11" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG11" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG11" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 12 -->
+          <div class="q-query question-12">
+            <label class="query" for="sTG12">“I can’t go on.”</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">Rarely</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="sTG12" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG12" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG12" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG12" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG12" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG12" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="sTG12" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Frequently</h3>
+              </div>
+            </div>
+          </div>
+          <a href="#causes" class="next-btn vertical-center">
+            <span class="next-btn-text arrow">Next</span>
+            <i class="fa-solid fa-arrow-right-long arrow"></i>
+          </a>
+        </div>
+      </section>
+
+<div class="space"></div>
+
+      <section id="causes">
+        <div class="header">
+          <h1 class="h1-index">4</h1>
+          <h1 class="h1-title">Causes</h1>
+          <p>Thank You Thank You Thank You!!! For having done a good job so far. And welcome to the sencond-to-last set of questions in which we dive into the main cause(s) behind your anxiety and stresses and burnout. You will be answer the big question: <br> <strong>Do You Get Stressed About...?</strong>  </p>
+        </div>
+        <hr class="header-body">
+        <div class="body">
+          <!-- QUESTION 1 -->
+          <div class="question-1">
+            <label class="query" for="workload">Heavy workload (GPA, clubs, part-time jobs,…)</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">No</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="workload" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="workload" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="workload" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="workload" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="workload" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="workload" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="workload" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Yes</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 2 -->
+          <div class="q-query question-2">
+            <label class="query" for="expectation">Expectation from the society, your family and yourself.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">No</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="expectation" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="expectation" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="expectation" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="expectation" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="expectation" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="expectation" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="expectation" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Yes</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 3 -->
+          <div class="q-query question-3">
+            <label class="query" for="relFr">Relationship with new friends (You have a hard time making friends when entering a new school)</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">No</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="relFr" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="relFr" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="relFr" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="relFr" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="relFr" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="relFr" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="relFr" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Yes</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 4 -->
+          <div class="q-query question-4">
+            <label class="query" for="peerPrs">Peer pressure.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">No</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="peerPrs" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="peerPrs" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="peerPrs" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="peerPrs" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="peerPrs" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="peerPrs" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="peerPrs" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Yes</h3>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- QUESTION 5 -->
+          <div class="q-query question-5">
+            <label class="query" for="finPrs">Financial pressure.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">No</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="finPrs" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="finPrs" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="finPrs" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="finPrs" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="finPrs" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="finPrs" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="finPrs" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Yes</h3>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- QUESTION 6 -->
+          <div class="q-query question-6">
+            <label class="query" for="ftrConcrn">Concerns about the future.</label> <br>
+            <div class="row radio-range">
+              <div class="col-sm-3 right-align vertical-center">
+                <h3 class="n">No</h3>
+              </div>
+              <div class="col-sm-6 options vertical-center">
+                  <label class="option">
+                      <input type="radio" name="ftrConcrn" required value="-3">
+                      <span class="circle circle-n circle-3"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="ftrConcrn" required value="-2">
+                      <span class="circle circle-n circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="ftrConcrn" required value="-1">
+                      <span class="circle circle-n circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="ftrConcrn" required value="0">
+                      <span class="circle circle-0"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="ftrConcrn" required value="1">
+                      <span class="circle circle-p circle-1"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="ftrConcrn" required value="2">
+                      <span class="circle circle-p circle-2"></span>
+                  </label>
+                  <label class="option">
+                      <input type="radio" name="ftrConcrn" required value="3">
+                      <span class="circle circle-p circle-3"></span>
+                  </label>
+              </div>
+              <div class="col-sm-3 left-align vertical-center">
+                <h3 class="p">Yes</h3>
+              </div>
+            </div>
+          </div>
+
+          <a href="#personal-exp" class="next-btn vertical-center">
+            <span class="next-btn-text arrow">Next</span>
+            <i class="fa-solid fa-arrow-right-long arrow"></i>
+          </a>
+        </div>
+      </section>
+
+<div class="space"></div>
+
+      <section id="personal-exp">
+        <div class="header">
+          <h1 class="h1-index">5</h1>
+          <h1 class="h1-title">Your Personal Experience</h1>
+          <p>WE THANK YOU SOOOOOOOO MUCH for all the helpful information you have given us. This part is completely optional but we would be so honor to hear about any of your past experience with burnout, any useful tips to overcome or anything you know about this dreadful ordeal. Please share with us!!! </p>
+          <label class="question s-appl" for="sharing">YOUR LETTER</label> <br>
+          <textarea spellcheck="false" class="input-box sharing-area" name="sharing" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea> <br>
+          <button class="next-btn" type="submit" name="button">
+            <i class="fa-regular fa-heart"></i>
+            <span class="next-btn-submit">Submit</span>
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+      </section>
+    </form>
+
+    <script src="https://kit.fontawesome.com/1ab495780a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

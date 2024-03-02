@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+}
+body {
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+h1 {
+  color: #944E63;
+  font-family: "Gluten", cursive;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+strong {
+  font-size: 1.5rem;
+}
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a{
+  color: #944E63;
+}
+a:hover {
+  color: #B47B84;
+}
+
+.p {
+    color: #944E63;
+}
+.n {
+    color: #CAA6A6;
+}
+.h1-index {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: solid #944E63 3px;
+  border-radius: 10%;
+}
+.h1-title {
+  padding: 30px 0 30px;
+}
+p {
+  font-family: "Red Hat Display", sans-serif;
+  color: #944E63;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+label {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.2rem;
+}
+.header-body {
+  margin: 0;
+}
+.header {
+  background-color: #F5EBEB;
+  padding: 75px 22.5% 50px;
+}
+.body {
+  padding: 50px 20%;
+
+}
+.question {
+  color: #B47B84;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+.query {
+  color: #867070;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.input-box {
+  border: solid #D5B4B4 3px;
+  height: 2.5rem;
+  width: 40%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.1rem;
+  color: #867070;
+  text-align: center;
+  margin: 15px auto 35px;
+  outline: none;
+}
+input[type="radio"]{
+  accent-color: #867070;
+}
+input[type=text]:focus {
+  border: 3px solid #B47B84;
+}
+input[type=email]:focus {
+  border: 3px solid #B47B84;
+}
+.check-box {
+  margin: 15px auto 35px;
+}
+.next-btn {
+  width: 350px;
+  height: 80px;
+  margin: 10px auto 0;
+  padding: 19px 50px;
+  border: 1px;
+  border-radius: 40px;
+  background-color: #AC7D88;
+  font-size: 1.2rem;
+  color: aliceblue;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.next-btn:hover {
+  background-color: #a1707c;
+  color: aliceblue;
+}
+.next-btn:hover > .arrow {
+  animation-name: arrow-move;
+  animation-duration: 0.75s;
+}
+@keyframes arrow-move {
+  50% {margin-left:  20px}
+  100% {margin-left: 15px}
+}
+.arrow {
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+.next-btn-text {
+  position: static;
+}
+
+/* STYLE RADIO RANGE */
+.radio-range {
+  margin: 55px auto;
+}
+
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-align {
+  justify-content: left;
+}
+.right-align {
+  justify-content: right;
+}
+
+.option {
+    margin: 0 10px;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.option .circle {
+    display: inline-block;
+    width: 30px; /* Adjust the size of the circles as needed */
+    height: 30px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+}
+
+.option .circle-3 {
+    width: 60px;
+    height: 60px;
+}
+
+.option .circle-2 {
+    width: 50px;
+    height: 50px;
+}
+
+.option .circle-1 {
+    width: 40px;
+    height: 40px;
+}
+
+.option .circle-0 {
+    border: 2px solid #FFE7E7;
+    width: 30px;
+    height: 30px;
+}
+
+.option .circle-n {
+    border: 2px solid #CAA6A6;
+}
+
+.option .circle-p {
+    border: 2px solid #944E63;
+}
+
+.option input[type="radio"]:checked + .circle-n {
+    background-color: #CAA6A6;
+}
+
+.option input[type="radio"]:checked + .circle-p {
+    background-color: #944E63;
+}
+
+.option input[type="radio"]:checked + .circle-0 {
+    background-color: #FFE7E7;
+}
+
+.option input[type="radio"]:hover + .circle-n {
+    background-color: #CAA6A6;
+}
+
+.option input[type="radio"]:hover + .circle-p {
+    background-color: #944E63;
+}
+
+.option input[type="radio"]:hover + .circle-0 {
+    background-color: #FFE7E7;
+}
+
+/* QUESTIONS STYLES */
+.q-query {
+  margin-top: 55px;
+}
+
+.sharing-area {
+  width: 80%;
+  height: 500px;
+  text-align: left;
+  resize: none;
+  overflow: hidden;
+}
+.s-appl {
+  margin: 30px auto 0;
+}
+.rs-pg {
+  text-align: left;
+  padding: 75px 30% 50px 10%;
+}
+.space {
+  height: 500px;
+}
+.fa-heart {
+
+}
+.next-btn:hover > .fa-heart {
+  animation-name: heart-bubble;
+  animation-duration: 0.75s;
+}
+.next-btn:hover > .next-btn-submit {
+  animation-name: heart-bubble;
+  animation-duration: 0.75s;
+}
+@keyframes heart-bubble {
+  50% {font-size: 103%}
+  100% {font-size: 100%}
+}
